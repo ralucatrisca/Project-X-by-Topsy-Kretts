@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Bosch_Project.iml" filepath="$PROJECT_DIR$/Bosch_Project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CISS_Kit/CISS_Kit.iml" filepath="$PROJECT_DIR$/CISS_Kit/CISS_Kit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api/api.iml" filepath="$PROJECT_DIR$/api/api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backend/backend.iml" filepath="$PROJECT_DIR$/backend/backend.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="Derby (Embedded) - DatabaseSammy" uuid="b8235e8a-3be2-46c8-a60b-317bd9c36601">
+    <database-info product="Apache Derby" version="10.10.2.0 - (1582446)" jdbc-version="4.2" driver-name="Apache Derby Embedded JDBC Driver" driver-version="10.10.2.0 - (1582446)">
+      <identifier-quote-string>&quot;</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact"/>
+    <database-model serializer="dbm" rdbms="DERBY" format-version="2.6">
+      <schema id="1" name="TEST">
+        <visible>1</visible>
+      </schema>
+      <schema id="2" name="APP">
+        <visible>1</visible>
+      </schema>
+      <schema id="3" name="NULLID"/>
+      <schema id="4" name="SQLJ"/>
+      <schema id="5" name="SYS"/>
+      <schema id="6" name="SYSCAT"/>
+      <schema id="7" name="SYSCS_DIAG"/>
+      <schema id="8" name="SYSCS_UTIL"/>
+      <schema id="9" name="SYSFUN"/>
+      <schema id="10" name="SYSIBM"/>
+      <schema id="11" name="SYSPROC"/>
+      <schema id="12" name="SYSSTAT"/>
+      <table id="13" parent="1" name="USERS"/>
+      <table id="14" parent="2" name="CONFIGURATION"/>
+      <table id="15" parent="2" name="ENVIRONMENTAL"/>
+      <table id="16" parent="2" name="INNERTIAL"/>
+      <table id="17" parent="2" name="USERS"/>
+      <column id="18" parent="13" name="ID">
+        <mandatory>1</mandatory>
+        <data-type>BIGINT(19)|-5</data-type>
+        <sequence-identity>1</sequence-identity>
+        <default-expression>GENERATED_BY_DEFAULT</default-expression>
+      </column>
+      <column id="19" parent="13" name="AGE">
+        <data-type>INTEGER(10)|4</data-type>
+      </column>
+      <column id="20" parent="13" name="CITY">
+        <data-type>VARCHAR(255)|12</data-type>
+      </column>
+      <column id="21" parent="13" name="NAME">
+        <data-type>VARCHAR(255)|12</data-type>
+      </column>
+      <key id="22" parent="13" name="SQL160727135632990">
+        <name-surrogate>1</name-surrogate>
+        <columns>ID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="23" parent="14" name="BASEID">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(10)|4</data-type>
+        <sequence-identity>1</sequence-identity>
+        <default-expression>GENERATED_BY_DEFAULT</default-expression>
+      </column>
+      <column id="24" parent="14" name="FACTORY">
+        <data-type>VARCHAR(255)|12</data-type>
+      </column>
+      <column id="25" parent="14" name="GW_ID">
+        <data-type>VARCHAR(255)|12</data-type>
+      </column>
+      <column id="26" parent="14" name="ID">
+        <data-type>VARCHAR(255)|12</data-type>
+      </column>
+      <column id="27" parent="14" name="LINE">
+        <data-type>VARCHAR(255)|12</data-type>
+      </column>
+      <column id="28" parent="14" name="MACHINE_ID">
+        <data-type>VARCHAR(255)|12</data-type>
+      </column>
+      <column id="29" parent="14" name="TIME">
+        <data-type>TIMESTAMP(29,9)|93</data-type>
+      </column>
+      <column id="30" parent="14" name="TYPE">
+        <data-type>VARCHAR(255)|12</data-type>
+      </column>
+      <key id="31" parent="14" name="SQL160805122618010">
+        <name-surrogate>1</name-surrogate>
+        <columns>BASEID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="32" parent="15" name="BASEID">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(10)|4</data-type>
+        <sequence-identity>1</sequence-identity>
+        <default-expression>GENERATED_BY_DEFAULT</default-expression>
+      </column>
+      <column id="33" parent="15" name="GW_ID">
+        <data-type>VARCHAR(255)|12</data-type>
+      </column>
+      <column id="34" parent="15" name="ID">
+        <data-type>VARCHAR(255)|12</data-type>
+      </column>
+      <column id="35" parent="15" name="L">
+        <data-type>INTEGER(10)|4</data-type>
+      </column>
+      <column id="36" parent="15" name="N">
+        <data-type>INTEGER(10)|4</data-type>
+      </column>
+      <column id="37" parent="15" name="P">
+        <data-type>INTEGER(10)|4</data-type>
+      </column>
+      <column id="38" parent="15" name="RHW">
+        <data-type>DOUBLE(52)|8</data-type>
+      </column>
+      <column id="39" parent="15" name="T">
+        <data-type>DOUBLE(52)|8</data-type>
+      </column>
+      <column id="40" parent="15" name="TIME">
+        <data-type>TIMESTAMP(29,9)|93</data-type>
+      </column>
+      <column id="41" parent="15" name="TYPE">
+        <data-type>VARCHAR(255)|12</data-type>
+      </column>
+      <key id="42" parent="15" name="SQL160805122617930">
+        <name-surrogate>1</name-surrogate>
+        <columns>BASEID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="43" parent="16" name="BASEID">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(10)|4</data-type>
+        <sequence-identity>1</sequence-identity>
+        <default-expression>GENERATED_BY_DEFAULT</default-expression>
+      </column>
+      <column id="44" parent="16" name="AX">
+        <data-type>INTEGER(10)|4</data-type>
+      </column>
+      <column id="45" parent="16" name="AY">
+        <data-type>INTEGER(10)|4</data-type>
+      </column>
+      <column id="46" parent="16" name="AZ">
+        <data-type>INTEGER(10)|4</data-type>
+      </column>
+      <column id="47" parent="16" name="GW_ID">
+        <data-type>VARCHAR(255)|12</data-type>
+      </column>
+      <column id="48" parent="16" name="GX">
+        <data-type>INTEGER(10)|4</data-type>
+      </column>
+      <column id="49" parent="16" name="GY">
+        <data-type>INTEGER(10)|4</data-type>
+      </column>
+      <column id="50" parent="16" name="GZ">
+        <data-type>INTEGER(10)|4</data-type>
+      </column>
+      <column id="51" parent="16" name="ID">
+        <data-type>VARCHAR(255)|12</data-type>
+      </column>
+      <column id="52" parent="16" name="MX">
+        <data-type>INTEGER(10)|4</data-type>
+      </column>
+      <column id="53" parent="16" name="MY">
+        <data-type>INTEGER(10)|4</data-type>
+      </column>
+      <column id="54" parent="16" name="MZ">
+        <data-type>INTEGER(10)|4</data-type>
+      </column>
+      <column id="55" parent="16" name="TIME">
+        <data-type>TIMESTAMP(29,9)|93</data-type>
+      </column>
+      <column id="56" parent="16" name="TYPE">
+        <data-type>VARCHAR(255)|12</data-type>
+      </column>
+      <key id="57" parent="16" name="SQL160805122617960">
+        <name-surrogate>1</name-surrogate>
+        <columns>BASEID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="58" parent="17" name="BASEID">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(10)|4</data-type>
+        <sequence-identity>1</sequence-identity>
+        <default-expression>GENERATED_BY_DEFAULT</default-expression>
+      </column>
+      <column id="59" parent="17" name="AGE">
+        <data-type>INTEGER(10)|4</data-type>
+      </column>
+      <column id="60" parent="17" name="CITY">
+        <data-type>VARCHAR(255)|12</data-type>
+      </column>
+      <column id="61" parent="17" name="GW_ID">
+        <data-type>VARCHAR(255)|12</data-type>
+      </column>
+      <column id="62" parent="17" name="ID">
+        <data-type>VARCHAR(255)|12</data-type>
+      </column>
+      <column id="63" parent="17" name="NAME">
+        <data-type>VARCHAR(255)|12</data-type>
+      </column>
+      <column id="64" parent="17" name="TIME">
+        <data-type>TIMESTAMP(29,9)|93</data-type>
+      </column>
+      <column id="65" parent="17" name="TYPE">
+        <data-type>VARCHAR(255)|12</data-type>
+      </column>
+      <key id="66" parent="17" name="SQL160805122617870">
+        <name-surrogate>1</name-surrogate>
+        <columns>BASEID</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+</component>

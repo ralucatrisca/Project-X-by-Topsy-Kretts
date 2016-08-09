@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Thu Aug 04 14:14:49 EEST 2016:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446): instance a816c00e-0156-5543-4cea-000007b27470 
+on database directory C:\Users\POF4CLJ\Bosch_Project\DatabaseSammy with class loader sun.misc.Launcher$AppClassLoader@1fb3ebeb 
+Loaded from file:/C:/Users/POF4CLJ/.m2/repository/org/apache/derby/derby/10.10.2.0/derby-10.10.2.0.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_91-b15
+user.dir=C:\Users\POF4CLJ\Documents\Bosch_Project_Backup_new
+os.name=Windows 7
+os.arch=amd64
+os.version=6.1
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

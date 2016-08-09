@@ -1,0 +1,44 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+
+
+    <bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/>
+
+    <bean id="JsonHandler" class="implementations.JsonHandler">
+    </bean>
+    <bean id="JsonService" class="services.JsonService">
+        <property name="handler" ref="JsonHandler"/>
+    </bean>
+
+    <bean id="EnvironmentalRepository" class="implementations.EnviromentalRepository">
+    </bean>
+    <bean id="EnvironmentalService" class="services.EnvironmentalService">
+        <property name="entity" ref="EnvironmentalRepository"/>
+    </bean>
+
+    <bean id="InertialRepository" class="implementations.InertialRepository">
+    </bean>
+    <bean id="InertialService" class="services.InertialService">
+        <property name="inertial" ref="InertialRepository"/>
+    </bean>
+
+    <bean id="ConfigurationRepository" class="implementations.ConfigurationRepository">
+    </bean>
+    <bean id="ConfigurationService" class="services.ConfigurationService">
+        <property name="config" ref="ConfigurationRepository"/>
+    </bean>
+
+    <bean id="Logger" class="implementations.Log">
+    </bean>
+
+    <bean id="LogService" class="services.LogService">
+        <property name="log" ref="Logger"/>
+    </bean>
+
+
+</beans>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Derby (Embedded) - DatabaseSammy" uuid="b8235e8a-3be2-46c8-a60b-317bd9c36601">
+      <secret-storage>master_key</secret-storage>
+      <user-name>test</user-name>
+      <introspection-scope>:APP,TEST</introspection-scope>
+      <resolve-scope>:APP,TEST</resolve-scope>
+    </data-source>
+  </component>
+</project>
