@@ -39,9 +39,6 @@
         right: -150px;
     }
 </style>
-<div id="content">
-    <img src="/images/bosch.png" class="ribbon"/>
-</div>
 
 </body>
 </html>
