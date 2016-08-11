@@ -28,7 +28,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="api" target="1.5" />
+      <module name="api" target="1.8" />
       <module name="backend" target="1.5" />
       <module name="Bosch_Project" target="1.5" />
       <module name="CISS_Kit" target="1.5" />

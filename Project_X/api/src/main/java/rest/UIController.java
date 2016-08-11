@@ -3,10 +3,14 @@ package rest;
 import entities.Config;
 import entities.Environmental;
 import entities.Inertial;
+import implementations.InertialRepository;
 import interfaces.services.IConfigurationService;
 import interfaces.services.IEnvironmentalService;
 import interfaces.services.IServiceInertial;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -66,6 +70,28 @@ public class UIController extends BaseController {
             System.out.println(c.getType());
         }
     }
+
+//    @RequestMapping(value = "/inertial", produces = MediaType.APPLICATION_JSON_VALUE,  method = RequestMethod.GET)
+//    public ResponseEntity<Inertial> getAllInertialJSON()
+//    {
+//        return new ResponseEntity<Inertial>((Inertial) inertial, HttpStatus.OK);
+//
+//    }
+
+//    @RequestMapping(value = "/inertial/", method = RequestMethod.GET)
+//    public ResponseEntity<List<Inertial>> listAllUsers() {
+//        List<Inertial> users = IServiceInertial.findAllInertials();
+//        if(users.isEmpty()){
+//            return new ResponseEntity<List<Inertial>>(HttpStatus.NO_CONTENT);//You many decide to return HttpStatus.NOT_FOUND
+//        }
+//        return new ResponseEntity<List<Inertial>>(users, HttpStatus.OK);
+   // }
+
+
+
+
+
+
 
     @Autowired
     public void setEnv(IEnvironmentalService env) {

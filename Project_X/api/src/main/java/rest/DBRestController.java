@@ -45,7 +45,7 @@ public class DBRestController extends BaseController {
     @RequestMapping(value = "/view-data.html", method = RequestMethod.GET)
     public ModelAndView getView() {
 
-        return new ModelAndView("view-data");
+        return new ModelAndView("/WEB-INF/views/view-data.html");
     }
 
     @RequestMapping(value = "/get", method = RequestMethod.GET)
@@ -57,7 +57,7 @@ public class DBRestController extends BaseController {
         String csv = "Categories,Ax,Ay,Az,Gx,Gy,Gz,Mx,My,Mz\n";
         while (it.hasNext()) {
             Inertial e = (Inertial) it.next();
-            if (inertial.timeDifference(e) <= 60) {
+            if (inertial.timeDifference(e) <= 250) {
                 csv += sdf.format(e.getTime().getTime()) + ",";
                 csv += e.getAx() + ",";
                 csv += e.getAy() + ",";

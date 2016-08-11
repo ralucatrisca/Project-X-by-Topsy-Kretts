@@ -15,47 +15,62 @@
 <script language="JavaScript">
     $(document).ready(function() {
 
-        // Get the CSV and create the chart
-        $.get('http://localhost:5555/home/get', function (csv) {
+        function refresh() {
 
-            $('#container').highcharts({
+            // Get the CSV and create the chart
+            $.get('http://localhost:5555/home/get', function (csv) {
 
-                data: {
-                    csv: csv
-                },
+                $('#container').highcharts({
 
-                title: {
-                    text: 'Inertial Data'
-                },
+                    data: {
+                        csv: csv
+                    },
 
-                yAxis: [{ // left y axis
                     title: {
-                        text: 'Values'
+                        text: 'Inertial Data'
                     },
-                    labels: {
+
+                    yAxis: [{ // left y axis
+                        title: {
+                            text: 'Values'
+                        },
+                        labels: {
+                            align: 'left',
+                            x: 3,
+                            y: 16,
+                            format: '{value:.,0f}'
+                        },
+                        showFirstLabel: false
+                    },],
+
+                    legend: {
                         align: 'left',
-                        x: 3,
-                        y: 16,
-                        format: '{value:.,0f}'
+                        verticalAlign: 'top',
+                        y: 20,
+                        floating: true,
+                        borderWidth: 0
                     },
-                    showFirstLabel: false
-                },],
 
-                legend: {
-                    align: 'left',
-                    verticalAlign: 'top',
-                    y: 20,
-                    floating: true,
-                    borderWidth: 0
-                },
-
-                tooltip: {
-                    shared: true,
-                    crosshairs: true
-                },
+                    tooltip: {
+                        shared: true,
+                        crosshairs: true
+                    },
+                });
             });
-        });
+        };
+        refresh();
+        setInterval(refresh, 5000);
+//
     });
 </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+

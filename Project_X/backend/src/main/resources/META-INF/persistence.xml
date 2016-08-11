@@ -10,7 +10,7 @@
         <properties>
             <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.EmbeddedDriver" />
             <property name="javax.persistence.jdbc.url"
-                      value="jdbc:derby:c:\Users\POF4CLJ\Bosch_Project\DatabaseSammy;create=true" />
+                      value="jdbc:derby:DatabaseSammy;create=true" />
             <property name="javax.persistence.jdbc.user" value="app" />
             <property name="javax.persistence.jdbc.password" value="test" />
             <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
